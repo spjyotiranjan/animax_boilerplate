@@ -54,6 +54,7 @@ nav {
 .button {
     background-color: #F50A5F;
     padding: 7px;
+    
 }
 
 a {
@@ -101,6 +102,56 @@ footer {
     text-align: center;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movies{
+    flex-wrap: wrap;
+    margin: 3% 14%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@keyframes arrow{
+    0%{
+        top: 15px;
+    }
+    100%{
+        top: 100px;
+    }
+    
+}
+#scroll{
+    position: relative;
+    animation: arrow 2s infinite;
+}
+@media only screen and (max-width:600px){
+    .wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    .container{
+        text-align: center;
+    }
+    .button{
+        background-color: aqua;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:900px){
+    .button{
+        background-color: blue;
+    }
+    .container{
+        text-align: center;
+    }
+
+}
 /* Iteration 1: Styling all the flex elements with (Justify-content:space-between) & (align-items:center) */
 
 /* Iteration 2: Using flex-wrap */
